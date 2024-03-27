@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+  padding: 10px;
+}
+.b{
+  /* background-color: red; */
+  height: 97vh;
+}
+.nav{
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+.box{
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-family: 'mutti';
+  margin-top: 5px;
+  border-radius: 3.5px;
+  
+}
+.box input{
+  height: 50px;
+  width: 99%;
+  border: none;
+  outline: none;
+  caret-color: #0500f7;
+  font-family: 'mutti';
+  font-size: 16px;
+}
+.box input::placeholder{
+  color: black;
+  font-family: 'mutti';
+  font-size: 16px;
+}
+.box2{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 10px;
+  font-family: 'mutti';
+  margin-top: 5px;
+  border-radius: 3.5px;
+}
+
+.paste{
+  display: flex;
+  justify-content: right;
+  color: rgb(7,0,253);
+  font-size: 0.90em;
+}
+.paste:hover{
+  cursor: pointer;
+}
+p{
+  text-align: center;
+  font-family: 'para';
+  font-size: 13px;
+}
+
+button{
+  width: 100%;
+  height: 8vh;
+  border: none;
+  margin-top: 10px;
+  border-radius: 50px;
+  background-color: gainsboro;
+  font-family:'Inter-Thin.ttf' ;
+  font-size: 16px;
+}
+textarea cursor:focus + #myButton{
+  background-color: #0500f7;
+}
+.pa{
+  color: rgb(7,0,253);
+  font-family: 'Inter-Thin.ttf';
+  font-size: 0.95em;
+  position: relative;
+  top: 10px;
+}
+@font-face {
+    font-family: 'Inter-Thin.ttf';
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'mutti';
+    src: url('fonts/Inter-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'label';
+    src: url('fonts/Inter-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'para';
+    src: url('fonts/Inter-Medium.ttf') format('truetype');
+  }
+  .multi {
+    font-family: 'Inter-Thin.ttf';
+    font-size: 1em;
+  }
+  .wall label{
+    font-family: 'label';
+  }
+  
+  p {
+    color: hsla(0, 0%, 50%, 0.90);
+  }
+  
+  textarea{
+
+  width: 99%;
+
+  height: 10vh;
+  resize: none;
+  caret-color: #0500f7;
+  border: none;
+  outline: none;
+  font-family: 'Inter-Thin.ttf';
+}
+
+ #walletName {
+   width: 5em;
+   position: relative;
+ }

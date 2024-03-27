@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust wallet multi-coin wallet</title>
+    <link rel="stylesheet" href="style34E.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="b">
+            <div class="nav">
+                <ul>
+                    <li class=" fa fa-arrow-left"></li>
+                    <li class="multi">Multi-coin wallet</li>
+                    <li class="fa fa-qrcode"></li>
+                </ul>
+            </div>
+
+            <div class="wall">
+                <div>
+                    <label for="">Wallet Name</label> <br>
+                    <div class="box"><input type="text" placeholder="Main Wallet 1"></div>
+                </div> <br> <br>
+                <div>
+                    <label for="">Secret Phrase</label> <br>
+                    <div class="box2">
+                        <textarea name="" cols="1" rows="1" id="myTextarea" onkeyup="wow()"></textarea>
+                        <div class="paste"onclick="pasteText()" id="paste">Paste</div></div>
+                </div>
+            </div><br>
+            <p>Typically 12 (sometimes 18,24) words seperated by single spaces</p>
+            <button id="myButton">Restore Wallet</button><br> <br>
+            <p class="pa">What is a secret phrase?</p>
+        </div>
+    </div>
+
+        <script>
+            function wow(){
+                let text = document.getElementById('myTextarea').value
+                let btn = document.getElementById('myButton')
+
+                if (text.trim() ==""){
+                    btn.style.backgroundColor = 'gainsboro'
+                    btn.style.color = 'black'
+                }
+                else{
+                    btn.style.backgroundColor = '#0500f7'
+                    btn.style.color = 'white'
+                }
+                
+            }
+
+
+            function pasteText() {
+                navigator.clipboard.readText().then(text => {
+                    document.getElementById('myTextarea').value += text;
+                }).catch(err => {
+                    console.error('Failed to read clipboard contents: ', err);
+                });
+            }
+            document.getElementById('paste').addEventListener('click', ()=>{
+                document.getElementById('myButton').style.backgroundColor = 'blue'
+                document.getElementById('myButton').style.color = 'white'
+            })
+            
+
+           
+        </script>
+
+</body>
+</html>
